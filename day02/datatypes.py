@@ -1,6 +1,7 @@
 
 # tuple
 # string and tuple are immutable in python and js not in other lang
+# list is mutable
 # Why these are immutable ?
 
 num1= 26
@@ -48,11 +49,11 @@ print(tup1)
 
 # difference blt tuple and list... important
 
-# adv of tuple
+# advanatages of tuple
 # 1. not to make any chance by user
 # it will dublicate the code and always to make change
 
-# range - 
+# range datatype::
 # range(0,10)
 r1=range(0,10)
 print(list(r1))
@@ -62,6 +63,14 @@ print()
 
 # steps to skip
 print(r1[2: 10: 2])
+
+# diff b\t list and tuple
+# tuple is fast than list;
+# tuple is more effencent;
+# tuple is immutable  list is immutable
+#  sytax is difference
+
+
 
 
 

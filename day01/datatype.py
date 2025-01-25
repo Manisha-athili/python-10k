@@ -1,7 +1,9 @@
 # print("Day 1")
 #Datatypes
 #1.Numeric data types
-#2.Sequence Data types
+#2.Sequence Data types :: list , 
+# 3.Set
+# 4.Dictionary
 
 #Numeric Data types
 #1.Int data type
@@ -77,11 +79,11 @@ img2 = 5+1j;
 print(type(img1))
 
 # operations
-print(img1+img2);
-print(img1-img2);
-print(img1**img2);
-print(img1*img2);
-print(img1/img2);
+print(img1+img2)
+print(img1-img2)
+print(img1**img2)
+print(img1*img2)
+print(img1/img2)
 # print(img1//img2); this will not work
 # print(img1%img2); this will not work
 
