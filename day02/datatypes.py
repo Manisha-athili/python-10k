@@ -17,7 +17,7 @@ print(id(str1))
 str2 = 'hi'
 print (id(str2))
 
-print('number of different varibles with same values have a same location/id.. if we want to change a particular varible then all the varibles should change so to this bug strings in python are immutable ')
+print('number of different varibles with same values have a same location/id.. if we want to change a particular varible then all the varibles should change so to aviod n this bug strings in python are immutable ')
 
 
 name = "str"
@@ -33,7 +33,7 @@ name = "str1"
 print(name)
 print(id(name))
 
-print('so we cannt change particular index value of the string onl ')
+print('so we cannt change particular index value of the string ')
 print('--------')
 
 # tuple immutable
@@ -46,7 +46,7 @@ print(tup1[1])
 print(tup1);
 tup1 += (1)
 print(tup1)
-
+# cannot access elements using an index
 # difference blt tuple and list... important
 
 # advanatages of tuple

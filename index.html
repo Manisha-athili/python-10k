@@ -3,165 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Python</title>
     <style>
-        th, td {
-          padding: 15px;
+        body{
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+            /* display: inline-block; */
+            background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );
+            width: 100%;
+            border: 10%;
         }
     </style>
 </head>
 <body>
-    <table border="1">
-        <thead style="background-color: chartreuse;">
-            <tr>
-                <th></th>
-                <th>Int </th>
-                <th>Float </th>
-                <th>Complex</th>
-                <th>Boolean</th>
-                <th>list</th>
-                <th>String</th>
-                <th>tuple</th>
-                <th>range</th>
-                <th>Set</th>
-                <th>Dicitionary</th>
-            </tr>
-            
-        </thead>
-        <tbody>
-            <tr>
-                <th>Int </th>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>no,int to str to list ...'int' object is not iterable</td>
-                <td>yes</td>
-                <td>no,'int' object is not iterabletuple to str to int </td>
-                <td>yes</td>
-                <td>no 'int' object is not iterable</td>
-                <td>no</td>
-            </tr>
-            <tr>
-                <th>Float</th>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>no,  'float' object is not iterable </td>
-                <td>yes</td>
-                <td>no, 'float' object is not iterable</td>
-                <td>no,'float' object cannot be <br> interpreted as an integer</td>
-                <td>no,'float' object is not iterable</td>
-                <td>no</td>
-            </tr>
-            <tr>
-                <th>Complex</th>
-                <td>no,int() argument must be a string,a bytes-like object or a real number, not 'complex'</td>
-                <td>no, float() argument must be a string or a real number, not 'complex'</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>no,'complex' object is not iterable </td>
-                <td>yes</td>
-                <td>no,TypeError: 'int' object is not iterable</td>
-                <td>no, TypeError: 'complex' object cannot be interpreted as an integer</td>
-                <td>no,TypeError: 'complex' object is not iterable</td>
-                <td>no</td>
-            </tr>
-            <tr>
-                <th>Boolean</th>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>no, TypeError: 'bool' object is not iterable</td>
-                <td>yes</td>
-                <td>TypeError: 'bool' object is not iterable</td>
-                <td>yes</td>
-                <td>no, TypeError: 'bool' object is not iterable</td>
-                <td>no</td>
-            </tr>
-            <tr>
-                <th>list</th>
-                <td>no,TypeError: int() argument must be a string, a bytes-like object or a real number, not 'list'</td>
-                <td>TypeError: float() argument must be a string or a real number, not 'list'</td>
-                <td>TypeError: complex() first argument must be a string or a number, not 'list'</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>no 'list' object cannot be interpreted as an integer</td>
-                <td>no unhashable type: 'list'</td>
-                <td>no</td>
-            </tr>
-            <tr>
-                <th>String</th>
-                <td>no ValueError: invalid literal for int() with base 10: 'String'</td>
-                <td>no, ValueError: could not convert string to float: 'String'</td>
-                <td>no,ValueError: complex() arg is a malformed string</td>
-                <td>no, ValueError: complex() arg is a malformed string</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>no TypeError: 'str' object cannot be interpreted as an integer</td>
-                <td>yes</td>
-                <td>no</td>
-            </tr>
-            <tr>
-                <th>tuple</th>
-                <td>no  int() argument must be a string, a bytes-like object or a real number, not 'tuple'</td>
-                <td>no,  float() argument must be a string or a real number, not 'tuple'</td>
-                <td>no, TypeError: complex() first argument must be a string or a number, not 'tuple'</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>TypeError: 'tuple' object cannot be interpreted as an integer</td>
-                <td>TypeError: unhashable type: 'list'</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>range</th>
-                <td>TypeError: int() argument must be a string, a bytes-like object or a real number, not 'range'</td>
-                <td>TypeError: float() argument must be a string or a real number, not 'range'</td>
-                <td>TypeError: float() argument must be a string or a real number, not 'range'</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>TypeError: 'range' object cannot be interpreted as an integer</td>
-                <td>yes</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>set</th>
-                <td>TypeError: int() argument must be a string, a bytes-like object or a real number, not 'set'</td>
-                <td>float() argument must be a string or a real number, not 'set'</td>
-                <td>TypeError: complex() first argument must be a string or a number, not 'set'</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>yes</td>
-                <td>TypeError: 'set' object cannot be interpreted as an integer</td>
-                <td>yes</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Dicitionary : key value pairs</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-
-    
+    <h1>Python Assignments</h1>
+    <button></button>
+    <button></button>
 </body>
 </html>

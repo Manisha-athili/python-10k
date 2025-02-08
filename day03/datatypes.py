@@ -23,6 +23,7 @@ print(len(set1))
 # set1 = {2, True, "str1",[2,3]}  list is not allow bcz list is stored in hashing 
 set1 = {2, True, "str1",(2,3)} 
 print(set1)
+# print(set1[3]) cannot access elements using an index
 
 
 
