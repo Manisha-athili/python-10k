@@ -75,4 +75,16 @@ print(num1,"globle scope")
 # keyword == lambda
 lambda x : x*x 
 
+lam = lambda x : x * 5
+print(lam(2))
 
+lam = 10 # as it is reassigned and function is earsed here...
+
+lam3 = lambda x,y:x+y
+print(lam3(2,3))
+
+def square():
+    return x*x
+
+map(square, [1,2,3,4,5])
+map(lambda x: x*x*x, [1,2,3,4,5]) #we use lambda function tp avoid repitition use of the function
